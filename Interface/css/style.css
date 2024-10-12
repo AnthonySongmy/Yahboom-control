@@ -1,0 +1,267 @@
+#header{
+	height : 100px;
+	background-color : rgba(6,5,18,0);
+	/*box-shadow : 6px 9px 10px rgb(37,37,37);*/
+}
+
+#logo img{
+	width : 15%;
+	margin-left : 10px;
+	margin-top : 10px;
+	height : 90px;
+}   
+
+.robot-container{
+	display : grid;
+	grid-template-columns : 300px 700px 300px;
+	grid-template-rows : 200px 200px 200px 200px 200px;
+	grid-gap : 20px;
+	height : auto;
+}
+
+	.bras-1{
+		display : flex;
+		flex-direction : column;
+		align-items : center;
+		gap : 10px;
+	}
+	
+	.bras-1 h3{
+		text-align : center;
+		padding: 10px;
+	}
+	
+	.image-container {
+		width : 100%;
+		position: relative;
+		float: left;
+	}
+	
+	.tooltip {
+		position: absolute;
+		background-color: #333;
+		color: #fff;
+		font-size: 12px;
+		padding: 8px;
+		border-radius: 10px;
+		opacity: 0;
+		transition: opacity 0.3s;
+		pointer-events: none;
+	}
+
+	.tooltip:after {
+		content: "";
+		position: absolute;
+		border-width: 6px;
+		border-style: solid;
+		border-color: #333 transparent transparent transparent;
+	}
+	
+	.tooltip.show {
+		opacity: 1;
+		pointer-events: auto;
+	}
+	
+	#r1-base-tooltip {
+  top: 78%;
+  left: 30%;
+  
+}
+
+#r1-shoulder-tooltip {
+  top: 65%;
+  left: 20%;
+}
+
+#r1-elbow-tooltip {
+  top: 55%;
+  left: 75%;
+}
+
+#r1-wrist-tooltip {
+  top: 22%; 
+  left: 60%;
+}
+
+#r1-gripper-tooltip {
+  top: 50%;
+  left: 25%;
+}
+#r1-gripper-rotate-tooltip {
+  top: 30%;
+  left: 20%;
+}
+
+	.image-container:hover .tooltip {
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	.image-container:hover .tooltip.show {
+		opacity: 1;
+	}
+
+	.image-container:hover .tooltip:after {
+		top: 100%;
+		left: 50%;
+		margin-left: -6px;
+	}
+	
+	.robot-container img{
+		display : block;
+		width : 250px;
+		margin : auto;
+	}
+	
+	.control{
+		display : flex;
+		flex-direction : column;
+		align-items : center;
+		padding : 40px;
+		gap : 20px;
+		background-color : rgba(255,255,255,0.8);
+		border-radius : 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+	
+	.servo-1{
+		display : flex;
+		align-items: center;
+        gap: 30px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		margin-bottom: 10px;
+	}
+	
+	.servo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .servo h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .servo p {
+        margin: 0;
+        font-size: 24px;
+    }
+	  
+	.panel{
+		top : 0;
+		right : 0;
+		display: flex;
+        align-items: center;
+		justify-content: center;
+		gap: 10%;
+        padding: 10px;
+	}
+	
+	.position{
+		display: flex;
+        align-items: center;
+		justify-content: center;
+		padding: 10px;
+		gap : 20%;
+		background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		width : 93%;
+		margin-bottom : 10px;
+	}
+	  
+	button{
+		border: none;
+		border-radius: 5px;
+		background-color: #fff;
+		color: #333;
+		font-size: 15px;
+		padding : 10px;
+		font-weight: bold;
+		text-transform: uppercase;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+		transition: all 0.3s ease-in-out;
+	}
+
+	button:hover {
+		background-color: #ffdf59;
+		color: #fff;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+	}
+
+	button:active {
+		box-shadow: none;
+		outline: none;
+		transform: translateY(2px);
+		transition: all 0.3s ease-in-out;
+	}
+
+	button:active {
+		transform: none;
+	}
+	
+	#cartes{
+		display : grid;
+		grid-template-columns : 115px 115px 115px 115px 115px;
+		grid-gap: 50px;
+		margin-bottom : 30px; 
+	}
+	
+	.cartes-rf{
+		background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		padding : 5px;
+		text-align : center;
+		width : 20%;
+	}
+	
+	#rf-1{
+		background-color : rgb(211,23,55)
+	}
+	
+	#rf-2{
+		background-color : rgb(146,209,255)
+	}
+	
+	#rf-3{
+		background-color : rgb(146,209,255)
+	}
+	
+	#rf-4{
+		background-color : rgb(146,209,255)
+	}
+	
+	#rf-5{
+		background-color : rgb(146,209,255)
+	}
+	
+	.robot img{
+		margin-top : 30px;
+	}
+	
+#ligne2{
+	margin-top : 20px;
+}
+	
+#footer{
+	margin-top : 20px;
+	background-color : rgb(6,5,18);
+	padding : 10px;
+	text-align : center;
+}
+
+#footer a{
+	color : white;
+	text-decoration : none;
+}
+
+#footer a:hover{
+	color : #ffdf59;
+	text-decoration : underline;
+}

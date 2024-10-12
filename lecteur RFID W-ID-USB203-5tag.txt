@@ -1,0 +1,9 @@
+lecteur RFID W-ID-USB203-5tag
+Ce lecteur est compatible 125khz, avec les tags de type EM4100 EM4305 T5577
+Ce lecteur est equipe du microcontroleur SR1898U
+
+UHF paper labels / CL7203L-H47
+
+Lecteur RFID GEE-LR-001 125khz EM4100
+
+dmesg ! grep "tty"

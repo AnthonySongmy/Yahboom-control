@@ -1,0 +1,180 @@
+<!Doctype html>
+<html>
+	<head>
+		<title> Interface Robot </title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<div id="header">
+			<div id="logo">
+				<img src="img/logo1.png" alt="Centre INNOTECH-FSEGN" />
+			</div>
+			<div id="ligne">
+				<hr/>
+			</div>
+		</div>
+		
+		<div class="robot-container">
+			<div class="bras-1">
+				<div class="image-container">
+					<h3> Robot départ </h3>
+					<img src="img/bras.jpg" alt="Bras du robot"/>
+					<div class="tooltip" id="r1-base-tooltip">Base</div>
+					<div class="tooltip" id="r1-wrist-tooltip">Wrist</div>
+					<div class="tooltip" id="r1-elbow-tooltip">Elbow</div>
+					<div class="tooltip" id="r1-shoulder-tooltip">Shoulder </div>
+					<div class="tooltip" id="r1-gripper-tooltip">Gripper</div>
+					<div class="tooltip" id="r1-gripper-rotate-tooltip">Gripper rotate</div>
+				</div>
+				<div class="control">
+					<div class="panel">
+						<button id="R1-start"> Démarrer </button>
+						<button id="R1-stop"> Arrêter </button>
+					</div>
+					<div class="panel">
+						<button id="R1-s1"> Scénario 1 </button>
+						<button id="R1-s2"> Scénario 2 </button>
+					</div>
+				</div>
+				<div class="servo-1">
+						<div class="servo">
+							<h3>Base</h3>
+								<button id="R1-UPM1">⟲</button>
+								<button id="R1-DOWNM1">⟳</button>
+						</div>
+						<div class="servo">
+							<h3>Shoulder</h3>
+								<button id="R1-UPM2">⬆</button>
+								<button id="R1-DOWNM2">⬇</button>
+						</div>
+						<div class="servo">
+							<h3>Elbow</h3>
+								<button id="R1-UPM3">⬆</button>
+								<button id="R1-DOWNM3">⬇</button>
+						</div>
+				</div>
+				<div class="servo-1">
+						<div class="servo">
+							<h3>Wrist</h3>
+								<button id="R1-UPM4">⬆</button>
+								<button id="R1-DOWNM4">⬇</button>
+						</div>
+						<div class="servo">
+							<h3>Gripper Rotate</h3>
+								<button id="R1-UPM5">⟲</button>
+								<button id="R1-DOWNM5">⟳</button>
+							</div>
+						<div class="servo">
+							<h3>Gripper</h3>
+								<button id="R1-UPM6">◀︎</button>
+								<button id="R1-DOWNM6">▶</button>
+						</div>
+				</div>
+				<div class="position">
+						<h3>Position of Arm 1: </h3>
+						<label id="position-robot-depart"> - </label>
+				</div>
+			</div>	
+			
+			<div class="robot">
+				<div class="img-container">
+					<img src="img/robot.jpg"/>
+				</div>
+				<div class="servo-2">
+					<div id="cartes">
+						<div class="cartes-rf" id="rf-1"> - </div>
+						<div class="cartes-rf" id="rf-2"> - </div>
+						<div class="cartes-rf" id="rf-3"> - </div>
+						<div class="cartes-rf" id="rf-4"> - </div>
+						<div class="cartes-rf" id="rf-5"> - </div>
+					</div>
+					<div class="control">
+						<h3> Wheel Control </h3>
+						<div id="actions">
+							<button id="R3-UP">◀︎</button>
+							<button id="R3-DOWN">▶</button>
+						</div>
+						<div id="scenario">
+							<button id="R3-s1"> Scénario 1 </button>
+							<button id="R3-s2"> Scénario 2 </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="bras-1">
+				<div class="image-container">
+					<h3> Robot arrivé </h3>
+					<img src="img/bras.jpg" alt="Bras du robot"/>
+					<div class="tooltip" id="r1-base-tooltip">Base</div>
+					<div class="tooltip" id="r1-wrist-tooltip">Wrist</div>
+					<div class="tooltip" id="r1-elbow-tooltip">Elbow</div>
+					<div class="tooltip" id="r1-shoulder-tooltip">Shoulder </div>
+					<div class="tooltip" id="r1-gripper-tooltip">Gripper</div>
+					<div class="tooltip" id="r1-gripper-rotate-tooltip">Gripper rotate</div>
+				</div>
+				<div class="control">
+					<div class="panel">
+						<button id="R2-start"> Démarrer </button>
+						<button id="R2-stop"> Arrêter </button>
+					</div>
+					<div class="panel">
+						<button id="R2-s1"> Scénario 1 </button>
+						<button id="R2-s2"> Scénario 2 </button>
+					</div>
+				</div>
+				<div class="servo-1">
+						<div class="servo">
+							<h3>Base</h3>
+								<button id="R2-UPM1">⟲</button>
+								<button id="R2-DOWNM1">⟳</button>
+						</div>
+						<div class="servo">
+							<h3>Shoulder</h3>
+								<button id="R2-UPM2">⬆</button>
+								<button id="R2-DOWNM2">⬇</button>
+						</div>
+						<div class="servo">
+							<h3>Elbow</h3>
+								<button id="R2-UPM3">⬆</button>
+								<button id="R2-DOWNM3">⬇</button>
+						</div>
+				</div>
+				<div class="servo-1">
+						<div class="servo">
+							<h3>Wrist</h3>
+								<button id="R2-UPM4">⬆</button>
+								<button id="R2-DOWNM4">⬇</button>
+						</div>
+						<div class="servo">
+							<h3>Gripper Rotate</h3>
+								<button id="R2-UPM5">⟲</button>
+								<button id="R2-DOWNM5">⟳</button>
+							</div>
+						<div class="servo">
+							<h3>Gripper</h3>
+								<button id="R2-UPM6">◀︎</button>
+								<button id="R2-DOWNM6">▶</button>
+						</div>
+				</div>
+				<div class="position">
+						<h3>Position of Arm 2: </h3>
+						<label id="position-robot-depart"> - </label>
+				</div>
+			</div>	 
+		</div>
+		<div id="ligne2">
+			<hr/>
+		</div>
+		<div id="footer">
+			<p> <a href="mailto:sabeur.elkosantini@fsegn.ucar.tn">© Tous droits réservés, 2023, INNOTECH-FSEGN, Inc</a></p>
+		</div>
+		<script type="text/javascript" src="js/controlR1.js"></script>
+		<script type="text/javascript" src="js/controlR2.js"></script>
+		<script type="text/javascript" src="js/controlBras1.js"></script>
+	</body>
+</html>
+	
+	
